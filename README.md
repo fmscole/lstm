@@ -1,3 +1,9 @@
+#lstm_batch    
+本项目是从 https://github.com/nicodjimenez/lstm fork过来的，稍作修改。原来的模型已经非常好，层次结构很清晰，非常有利于学习，但是不支持batch训练，我想这是非常起码的，所以修改为支持batch训练，有了lstm_batch.py，每个数据格式为[batchs_size,n_length,x_dim] ,另外，我认为代码的接口与loss结合得太过于紧密，我做了一定的分离。    
+新增加了几个toy_task:sin_train.py,mnist_train.py等等。    
+另外，从 https://github.com/qixianbiao/RNN fork过来的项目也放到一起了，便于学习和阅读。   
+
+
 # lstm
 A basic lstm network can be written from scratch in a few hundred lines of python, yet most of us have a hard time figuring out how lstm's actually work.  The original Neural Computation [paper](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=3&cad=rja&uact=8&ved=0CDAQFjACahUKEwj1iZLX5efGAhVMpIgKHbv3DiI&url=http%3A%2F%2Fdeeplearning.cs.cmu.edu%2Fpdfs%2FHochreiter97_lstm.pdf&ei=ZuirVfW-GMzIogS777uQAg&usg=AFQjCNGoFvqrva4rDCNIcqNe_SiPL_VPxg&sig2=ZYnsGpdfHjRbK8xdr1thBg&bvm=bv.98197061,d.cGU) is too technical for non experts.  Most blogs online on the topic seem to be written by people
 who have never implemented lstm's for people who will not implement them either.  Other blogs are written by experts (like this [blog post](http://karpathy.github.io/2015/05/21/rnn-effectiveness/)) and lack simplified illustrative source code that actually does something.  The [Apollo](https://github.com/Russell91/apollo) library built on top of caffe is terrific and features a fast lstm implementation.  However, the downside of efficient implementations is that the source code is hard to follow.
