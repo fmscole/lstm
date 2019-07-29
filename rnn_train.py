@@ -31,7 +31,7 @@ if __name__ == '__main__':
     #x0 = [0, 1, 2, 3, 4, 5, 6, 7, 8]--> y0 = [1, 2, 3, 4, 5, 6, 7, 8, 0],            x1 = [5, 6, 7, 8, 0, 1, 2, 3, 4]--> y1 = [6, 7, 8, 0, 1, 2, 3, 4, 5]
     model = RNN(10, 100, 10)
     state = np.random.random(100)
-    epoches = 5
+    epoches = 7
     smooth_loss = 0
     for ll in range(epoches):
         print('epoch i:', ll)
