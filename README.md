@@ -1,3 +1,4 @@
+
 #lstm_batch    
 本项目是从 https://github.com/nicodjimenez/lstm fork过来的，稍作修改。原来的模型已经非常好，层次结构很清晰，非常有利于学习，但是不支持batch训练，我想这是非常起码的，所以修改为支持batch训练，有了lstm_batch.py，每个数据格式为[batchs_size,n_length,x_dim] ,另外，我认为代码的接口与loss结合得太过于紧密，我做了一定的分离。    
 新增加了几个玩具任务（toy_task）:   
